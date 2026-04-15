@@ -8,4 +8,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://blog.coolkev.com',
 	integrations: [mdx(), sitemap()],
+	build: {
+		format: 'file',
+	},
 });
