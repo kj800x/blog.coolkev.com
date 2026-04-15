@@ -30,10 +30,10 @@ const posts = (await getCollection('blog')).sort(
 									</span>
 								</div>
 								<h2 class="post-title">
-									<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+									<a href={`/blog/${post.id}.html`}>{post.data.title}</a>
 								</h2>
 								{post.data.description && <p>{post.data.description}</p>}
-								<a class="read-more" href={`/blog/${post.id}/`}>Read more &rarr;</a>
+								<a class="read-more" href={`/blog/${post.id}.html`}>Read more &rarr;</a>
 							</div>
 						))
 					}
